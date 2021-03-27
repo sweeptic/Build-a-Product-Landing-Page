@@ -83,21 +83,23 @@ body {
 
 
 .nav-header {
-  display: flex;
-  align-items: center;
-  /* margin-top: 2rem; */
-  /* padding-bottom: 1rem; */
+  /* align-items: center; */
+  /* grid-column: 2/3; */
+  /* grid-row: 1/1; */
+ 
 }
 
 .nav-links {
+  /* grid-column: 3/4; */
+  /* grid-row: 1/1; */
   list-style-type: none;
   z-index: 10;
-  margin-left: 5rem;
+ 
 }
 
   .nav-links li {
     margin-right: 2rem;
-    /* padding-bottom: 1rem; */
+  
   }
 
 
@@ -133,25 +135,34 @@ figure img {
 /* hero layout mobile-first */
 
 .navbar {
+  /* position: fixed; */
+
+  margin: 0 2rem;
   /* background-color: rgb(204, 204, 204); */
-  display: flex;
+  /* display: flex; */
+  display: grid;
   z-index: 10;
+  grid-template-columns: 1fr minmax(auto, 53rem) 1fr;
+  position: sticky;
+  top: 0;
+  left: 0;
+  align-self: start;
+  background: white;
 }
 
 .nav-center {
+grid-column: 2 /3 ;
   transition: height 0.2s;
   transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
   /* background-color: greenyellow; */
-  width: 100%;
-  margin: 0 2rem;
-  max-width: 1170px;
+  /* width: 100%; */
+  /* margin: 0 2rem; */
+  /* max-width: 1170px; */
   /* margin: 0 auto; */
-  display: flex;
-  flex-flow: column;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  background: white;
+  /* display: flex; */
+  /* flex-flow: column; */
+  /* overflow: hidden; */
+  
   list-style: none;
   height: 15rem; /* Put your desired height here*/
 }
@@ -171,8 +182,8 @@ figure img {
   display: grid;
   height: calc(100vh - 15rem);
   grid-template-rows: 1fr min-content 3fr min-content 1fr;
-  grid-template-columns: 1fr minmax(min-content, 50rem) 1fr;
-  margin-top: 15rem;
+  grid-template-columns: 1fr minmax(auto, 53rem) 1fr;
+  /* margin-top: 15rem; */
 }
 
 .hero-img {
