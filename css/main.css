@@ -357,6 +357,7 @@ figure img {
 }
 
 .product-footer{
+  grid-row: 1/2;
   grid-column: 2/3;
 }
 
@@ -388,6 +389,41 @@ figure img {
   align-items: center;
   gap: 3rem;
 }
+
+
+.footer-links {
+  list-style-type: none;
+}
+
+.footer-links span, .footer-links li{
+  Font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+.footer-links span{
+  color: var(--color-product-description-color);  
+  /* padding-right: 15rem; */
+  padding-right: clamp(1rem, 25vw, 13rem);
+
+}
+
+.footer-links li{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.product-footer-table{
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+}
+
+
 
 @media screen and (min-width: 576px) {
   .nav-center{
