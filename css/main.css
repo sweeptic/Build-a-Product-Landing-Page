@@ -353,6 +353,7 @@ figure img {
 
 .footer-btn{
   height: 4.7rem;
+  font-size: 1.3rem;
 }
 
 .product-footer{
@@ -376,6 +377,10 @@ figure img {
   font-weight: 400;
   line-height: 2.6rem;
   color: var(--color-product-description-color);
+}
+
+.product-footer-price{
+  color: white;
 }
 
 .product-footer-desc{
