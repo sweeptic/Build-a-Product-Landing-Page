@@ -685,21 +685,47 @@ html{
     padding-right: 6.5rem;
   }
 
-
-
-
-  
-
 }
 
 
 
 
 
-
-
 @media screen and (min-width: 1200px) {
-  
+
+
+
+
+.hero-center{
+  grid-template-columns: 1fr 44rem 62rem 1fr;
+  grid-template-rows:  1fr min-content ;
+
+}
+
+
+
+
+.section-center,
+.footer-center {
+  grid-template-columns: 1fr repeat( 2, 53rem) 1fr;
+}
+
+.hero-img{
+  grid-row: 1/-1;
+  /* margin-right: -16rem; */
+  /* width: 120%; */
+  /* position: absolute; */
+  margin-bottom: -4.5rem;
+  align-self: end;
+  margin-right: -13rem;
+}
+
+.hero-info{
+  grid-row:  1/2;
+}
+
+
+
 }
 
 
