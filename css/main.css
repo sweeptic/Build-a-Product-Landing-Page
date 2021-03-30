@@ -103,6 +103,10 @@ body {
 .nav-links {
   /* grid-column: 3/4; */
   /* grid-row: 1/1; */
+
+  display: flex;
+
+
   list-style-type: none;
   z-index: 10;
 }
@@ -204,12 +208,29 @@ figure img {
 
 .nav-header {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 0 2rem;
-  font-size: 3rem;
   padding-top: 3rem;
+  align-items: center;
 }
 
+.nav-header-logo{
+  font-size: 3rem;
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  font-family: 'Open Sans', arial, sans-serif;
+  letter-spacing: -0.3rem;
+}
+
+.nav-header-menu{
+  font-size: 1.4rem;
+  
+}
+
+
+.nav-header-menu{
+  margin-left: 11rem;
+}
 
 
 /* .nav-resized{
