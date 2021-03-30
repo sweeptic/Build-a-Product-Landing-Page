@@ -259,7 +259,7 @@ figure img {
 
 .header {
   background-color: var(--white);
-  margin: 0 2rem;
+  /* margin: 0 2rem; */
 }
 
 
@@ -536,6 +536,11 @@ html{
   align-items: center;
 }
 
+.nav-center {
+  max-width: 90.2rem;
+}
+
+
   .hero-center {
     grid-template-rows: minmax(5rem, 1fr) min-content minmax(5rem, 1fr);
   }
@@ -699,9 +704,7 @@ html{
 .hero-center{
   grid-template-columns: 1fr 44rem 62rem 1fr;
   grid-template-rows:  1fr min-content ;
-
 }
-
 
 
 
@@ -709,6 +712,12 @@ html{
 .footer-center {
   grid-template-columns: 1fr repeat( 2, 53rem) 1fr;
 }
+
+.nav-center {
+  max-width: 110rem;
+}
+
+
 
 .hero-img{
   grid-row: 1/-1;
