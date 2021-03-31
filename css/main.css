@@ -194,7 +194,7 @@ figure img {
   position: sticky;
   top: 0;
   height: 0;
-  transition: all 0.7s;
+  transition: all 0.2s;
 
 }
 
@@ -202,13 +202,13 @@ figure img {
 
 
 .nav-center {
-  transition: all 0.7s;
+  transition: all 0.2s;
   
 }
 
 .navCenter{
   background-color: rgb(255, 255, 0);
-  transition: all 0.7s;
+  transition: all 0.2s;
 }
 
 
@@ -219,7 +219,7 @@ figure img {
   grid-template-columns: 1fr minmax(auto, 53rem) 1fr;
   grid-template-rows: min-content min-content ;
   overflow: hidden;
-  transition: all 0.7s;
+  transition: all 0.2s;
   /* z-index: 1; */
   z-index: 10;
   /* height: 10rem; */
@@ -240,7 +240,6 @@ figure img {
   z-index: 10;
   transition: all 0.7s;
   font-size: 35px !important;
-  transition: all 0.7s;
 }
 
 .navHeaderLogo{
@@ -254,24 +253,24 @@ figure img {
   padding: 0 2rem;
   transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
   background-color: rgb(255, 255, 0);
-  transition: all 0.7s;
+  transition: all 0.2s;
   /* because transition does not work on non specified units! */
-  height: 150px;
   /* max-height: 10rem; */
   
-
+  height: 0;
+  
 }
 
 
 .toggleMenu{
-  height: 0;
-  transition: all 0.7s;
+  height: 150px;
+  transition: all 0.2s;
 }
 
 
 .nav-resized{
   padding-top: 0 ;
-  transition: all 0.7s;
+  transition: all 0.2s;
 }
 
 
@@ -566,13 +565,10 @@ figure img {
 
 
 @media screen and (min-width: 576px) {
-/* sponsored by css grid minmax function :) */
 
  html{
   font-size: 67.5%;
-  /* font-size: 90%; */
 } 
-
 
 
 .nav-header,
@@ -582,18 +578,7 @@ figure img {
   grid-template-columns: 1fr minmax(auto, 47rem) 1fr;
 }
 
-/* .hero-center{
 
-  grid-template-rows: 1rem min-content 1fr repeat(2, min-content) 1rem;
-} */
-
-
-/* grid-template-columns: 1fr minmax(auto, 53rem) 1fr; */
-
-/* .nav-links{
-  flex-flow: column;
-  z-index: 1;
-} */
 
 
 
@@ -636,9 +621,49 @@ figure img {
 
 @media screen and (min-width:992px) {
 
-  .nav-header-menu{
-    margin-left: 9rem;
+
+  .nav-header{
+    grid-template-columns: 1fr minmax(auto, 15.1rem) minmax(auto, 71.1rem) 1fr;
+    grid-template-rows: 1fr;
   }
+
+  .menu-tighten{
+    padding: 0 2rem;
+  }
+
+  .nav-header-logo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  
+    .nav-header-menu{
+      transition: none;
+      grid-column: 3/4;
+      grid-row: 1/2;
+      margin-left: 5rem;
+      height: auto;
+      /* margin-left: auto; */
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+    }
+
+    .nav-links{
+      flex-flow: row;
+    }
+
+
+
+
+  
+.btn-mini{
+  display: none;
+}
+
+  
+
+
+
 .product-one{
   padding-top: 8rem; 
   padding-bottom: 8rem;
@@ -657,8 +682,6 @@ figure img {
 
 
 
-
-
 .hero-center, 
 .section-center,
 .footer-center {
@@ -666,9 +689,6 @@ figure img {
   align-items: center;
 }
 
-.nav-center {
-  max-width: 90.2rem;
-}
 
 
   .hero-center {
@@ -828,12 +848,19 @@ figure img {
 
 @media screen and (min-width: 1200px) {
 
+  
+  .nav-header{
+  grid-template-columns: 1fr minmax(auto, 16rem) minmax(auto, 90rem) 1fr;
+  }
+/* 
 
-
+    grid-template-columns: 1fr 44rem 62rem 1fr;
+  } */
 
 .hero-center{
   grid-template-columns: 1fr 44rem 62rem 1fr;
   grid-template-rows:  1fr min-content ;
+
 }
 
 
@@ -841,10 +868,6 @@ figure img {
 .section-center,
 .footer-center {
   grid-template-columns: 1fr repeat( 2, 53rem) 1fr;
-}
-
-.nav-center {
-  max-width: 110rem;
 }
 
 
