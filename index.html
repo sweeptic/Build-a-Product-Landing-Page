@@ -12,16 +12,29 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
   <title>Document</title>
 </head>
 
 <body id="main" class="container">
   <nav class="navbar" id='navbar'>
-    <div class="nav-center">
-      <div class="nav-header">
+    <div class="nav-center" id='navCenter'>
+      <div class="nav-header" id='nav-header'>
 
-        <div class="nav-header-logo">portfolio</div>
-        <div class="nav-header-menu" id='nav-header-menu'>
+        <div class="nav-header-logo" id='nav-header-logo'>
+          <p>portfolio</p>
+
+
+          <button onclick="menuToggle()" class="btn-mini">
+            <i class="fas fa-bars"></i>
+          </button>
+
+
+        </div>
+        <div class="nav-header-menu" id="nav-header-menu">
 
 
 
@@ -201,21 +214,45 @@
 
 <script>
 
-  var navbar = document.getElementById('navbar');
+
 
   var navHeaderMenu = document.getElementById('nav-header-menu');
+
+  var navHeaderLogo = document.getElementById('nav-header-logo');
+
+  var navHeader = document.getElementById('nav-header');
+
+  var navCenter = document.getElementById('navCenter');
+
+
+  function menuToggle() {
+
+    navHeaderMenu.classList.toggle("toggleMenu");
+  }
+
 
   window.onscroll = function () {
     "use strict";
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      navbar.classList.add("nav-scrolled");
-      navHeaderMenu.classList.add("nav-resized")
+      // navHeaderMenu.classList.add("menu-tighten");
+
+      navHeader.classList.add("nav-resized")
+
+      navHeaderLogo.classList.add("navHeaderLogo");
+
+      navCenter.classList.add("navCenter");
+
       // myNav.classList.remove("nav-transparent");
     }
     else {
       // myNav.classList.add("nav-transparent");
-      navbar.classList.remove("nav-scrolled");
-      navHeaderMenu.classList.remove("nav-resized")
+      // navHeaderMenu.classList.remove("menu-tighten");
+
+      navHeader.classList.remove("nav-resized");
+
+      navHeaderLogo.classList.remove("navHeaderLogo");
+
+      navCenter.classList.remove("navCenter");
     }
   };
 </script>
