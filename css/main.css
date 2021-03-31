@@ -343,6 +343,7 @@ figure img {
 }
 
 .hero-link {
+  margin: 0.4rem 0;
   display: flex;
   flex: 0 1 17.8rem;
   align-items: center;
