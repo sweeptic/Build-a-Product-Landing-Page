@@ -53,10 +53,6 @@ body {
   padding-top: 0;
 }
 
-.pb-2 {
-  padding-bottom: 5rem;
-}
-
 .menu-item {
   text-decoration: none;
   color: var(--default-font-color);

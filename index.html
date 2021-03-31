@@ -9,12 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/main.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <title>Document</title>
 </head>
@@ -23,24 +24,13 @@
   <nav class="navbar" id='navbar'>
     <div class="nav-center" id='navCenter'>
       <div class="nav-header" id='nav-header'>
-
         <div class="nav-header-logo" id='nav-header-logo'>
           <p>portfolio</p>
-
-
-          <button onclick="menuToggle()" class="btn-mini">
+          <button onclick="menuToggleFn()" class="btn-mini">
             <i class="fas fa-bars"></i>
           </button>
-
-
         </div>
         <div class="nav-header-menu" id="nav-header-menu">
-
-
-
-          <!-- ||| -->
-
-
           <ul class="nav-links">
             <li><a class="menu-item" href="#...">intro</a></li>
             <li><a class="menu-item" href="#...">features</a></li>
@@ -49,10 +39,7 @@
             <li><a class="menu-item" href="#...">testimonials</a></li>
             <li><a class="menu-item" href="#...">buy now</a></li>
           </ul>
-
         </div>
-
-
       </div>
     </div>
   </nav>
@@ -61,11 +48,9 @@
     <div class="hero-center">
       <div class="hero-info ">
         <span class="hero-info-intro hero-info-1">introducing</span>
-
         <svg class="hero-info-2" height="5" width="99%">
           <line x1="0" y1="0" x2="600" y2="0" stroke="black" stroke-width="5"></line>
         </svg>
-
         <strong class="hero-info-intro hero-info-3 stronger">sony headphone</strong>
         <div class='hero-desc'>
           <span class='hero-price '>$350</span>
@@ -75,8 +60,6 @@
       <figure class="hero-img">
         <img src="/img/product-1.png" alt="" />
       </figure>
-
-
     </div>
   </header>
 
@@ -90,8 +73,6 @@
           <h2 class='product-header'>sony headphone</h2>
         </div>
         <p class='product-text'>
-
-
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
           standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
           make a type specimen book. It has survived not only five centurie
@@ -138,8 +119,6 @@
           <h2 class='product-header'>sony headphone</h2>
         </div>
         <p class='product-text'>
-
-
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac metus at elit malesuada tristique ut at
           est. Donec ut iaculis nunc. Nullam egestas nec erat a tincidunt. Mauris metus metus, bibendum id convallis
           non, commodo in lacusces.
@@ -155,8 +134,6 @@
 
   <footer class="footer section">
     <div class="footer-center">
-
-
       <article class="product-footer">
         <div class='product-footer-title'>
           <h2 class='product-footer-header'>sony headphone</h2>
@@ -168,12 +145,10 @@
           ipsam voluptate itaque, ea recusandae temporibus harum architecto
           illo mollitia tenetur laudantium deleniti expedita quidem.
         </p>
-
         <div class='product-footer-desc'>
           <span class='hero-price product-footer-price'>$350</span>
           <a class='hero-link btn btn-primary btn-rounded footer-btn' href="#">buy now</a>
         </div>
-
       </article>
 
 
@@ -182,7 +157,6 @@
         <p class="product-footer-title">
           general
         </p>
-
         <ul class="footer-links">
           <div class='footer-links-group-1'>
             <li><span>item type</span>description</li>
@@ -201,60 +175,16 @@
           </div>
         </ul>
       </div>
-
-
-
-
     </div>
   </footer>
-
-
 
 </body>
 
 </html>
 
-<script>
+<script type="text/javascript" src="./script/menuToggle.js"></script>
+<script type="text/javascript" src="./script/menuSetter.js"></script>
 
 
 
-  var navHeaderMenu = document.getElementById('nav-header-menu');
-
-  var navHeaderLogo = document.getElementById('nav-header-logo');
-
-  var navHeader = document.getElementById('nav-header');
-
-  var navCenter = document.getElementById('navCenter');
-
-
-  function menuToggle() {
-
-    navHeaderMenu.classList.toggle("toggleMenu");
-  }
-
-
-  window.onscroll = function () {
-    "use strict";
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      navHeaderMenu.classList.add("menu-tighten");
-
-      navHeader.classList.add("nav-resized")
-
-      navHeaderLogo.classList.add("navHeaderLogo");
-
-      navCenter.classList.add("navCenter");
-
-      // myNav.classList.remove("nav-transparent");
-    }
-    else {
-      // myNav.classList.add("nav-transparent");
-      navHeaderMenu.classList.remove("menu-tighten");
-
-      navHeader.classList.remove("nav-resized");
-
-      navHeaderLogo.classList.remove("navHeaderLogo");
-
-      navCenter.classList.remove("navCenter");
-    }
-  };
 </script>
