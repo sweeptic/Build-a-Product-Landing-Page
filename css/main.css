@@ -440,6 +440,9 @@ figure img {
   color: var(--default-font-color);
   width: 30rem;
   font-size: 1.6rem;
+  padding-left: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .footer-links {
