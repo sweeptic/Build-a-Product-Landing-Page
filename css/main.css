@@ -24,6 +24,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -153,6 +154,10 @@ figure img {
 }
 
 /* hero layout mobile-first */
+
+#header-img {
+  display: none;
+}
 
 .navbar {
   position: sticky;
@@ -289,7 +294,7 @@ figure img {
   padding-bottom: 3rem;
 }
 
-.header {
+.hero-section {
   background-color: var(--white);
 }
 

@@ -21,31 +21,36 @@
 </head>
 
 <body id="main" class="container">
-  <nav class="navbar" id='navbar'>
-    <div class="nav-center" id='navCenter'>
-      <div class="nav-header" id='nav-header'>
-        <div class="nav-header-logo" id='nav-header-logo'>
-          <p>Beats</p>
-          <button onclick="menuToggleFn()" class="btn-mini">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-        <div class="nav-header-menu" id="nav-header-menu">
-          <ul class="nav-links">
-            <li><a class="menu-item" href="#...">intro</a></li>
-            <li><a class="menu-item" href="#...">features</a></li>
-            <li><a class="menu-item" href="#...">tour</a></li>
-            <li><a class="menu-item" href="#...">specification</a></li>
-            <li><a class="menu-item" href="#...">testimonials</a></li>
-            <li><a class="menu-item" href="#...">buy now</a></li>
-          </ul>
+
+  <header class="navbar" id='header'>
+    <nav id='nav-bar'>
+      <div class="nav-center" id='navCenter'>
+        <div class="nav-header" id='nav-header'>
+          <div class="nav-header-logo" id='nav-header-logo'>
+            <p>Beats</p>
+            <img id='header-img' src="" alt="empty-company-logo">
+            <button onclick="menuToggleFn()" class="btn-mini">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div class="nav-header-menu" id="nav-header-menu">
+            <ul class="nav-links">
+              <li><a class="menu-item nav-link" href="#intro">intro</a></li>
+              <li><a class="menu-item nav-link" href="#design">design</a></li>
+              <li><a class="menu-item nav-link" href="#sound">sound</a></li>
+              <li><a class="menu-item nav-link" href="#comfortable">comfortable</a></li>
+              <li><a class="menu-item nav-link" href="#video">video</a></li>
+              <li><a class="menu-item nav-link" href="#specifications">specifications</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <header class="header">
-    <div class="hero-center">
+
+  <section class="hero-section">
+    <div class="hero-center" id='intro'>
       <div class="hero-info ">
         <span class="hero-info-intro hero-info-1">introducing</span>
         <svg class="hero-info-2" height="5" width="99%">
@@ -61,10 +66,10 @@
         <img src="/img/oie_sfBHXeK6axAv-939-1130.jpg" alt="headphone-hero" />
       </figure>
     </div>
-  </header>
+  </section>
 
   <section class="section product-one">
-    <div class="section-center product-one-center">
+    <div class="section-center product-one-center" id='design'>
       <figure class="product-one-img">
         <img src="/img/oie_dhW4HTNc2twG-629-455.jpg" alt="table-with-headphone" />
       </figure>
@@ -78,7 +83,7 @@
           make a type specimen book. It has survived not only five centurie
         </p>
         <div class='product-link'>
-          <a class='btn btn-secondary btn-rounded ' href="#">specifications</a>
+          <a class='btn btn-secondary btn-rounded ' href="#specifications">specifications</a>
         </div>
       </article>
     </div>
@@ -86,7 +91,7 @@
 
 
   <section class="section product-two">
-    <div class="section-center product-two-center">
+    <div class="section-center product-two-center" id='sound'>
       <figure class="product-two-img">
         <img src="/img/oie_HPWLuS71L0AZ-463-473.jpg" alt="girl-with-headphone" />
       </figure>
@@ -102,7 +107,7 @@
           illo mollitia tenetur laudantium deleniti expedita quidem.
         </p>
         <div class='product-link'>
-          <a class='btn btn-secondary btn-rounded ' href="#">specifications</a>
+          <a class='btn btn-secondary btn-rounded ' href="#specifications">specifications</a>
         </div>
       </article>
     </div>
@@ -110,7 +115,7 @@
 
 
   <section class="section product-three">
-    <div class="section-center product-three-center">
+    <div class="section-center product-three-center" id='comfortable'>
       <figure class="product-three-img">
         <img src="/img/oie_fdNj2SqrGCBI-870-587.jpg" alt="happy-girl-with-headphone" />
       </figure>
@@ -132,7 +137,35 @@
 
 
 
-  <footer class="footer section">
+  <section class="section product-one">
+    <div class="section-center product-one-center">
+      <figure class="product-one-img">
+
+        <iframe id='video' width="560" height="315" src="https://www.youtube.com/embed/ebHqWaaLVdw"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+      </figure>
+      <article class="product-one-text ">
+        <div>
+          <h2 class='product-header'>Watch Video!</h2>
+        </div>
+        <p class='product-text'>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centurie
+        </p>
+
+      </article>
+    </div>
+  </section>
+
+
+
+
+
+  <footer class="footer section" id='specifications'>
     <div class="footer-center">
       <article class="product-footer">
         <div class='product-footer-title'>
@@ -145,10 +178,10 @@
           ipsam voluptate itaque, ea recusandae temporibus harum architecto
           illo mollitia tenetur laudantium deleniti expedita quidem.
         </p>
-        <div class='product-footer-desc'>
+        <form class='product-footer-desc'>
           <span class='hero-price product-footer-price'>$350</span>
-          <a class='hero-link btn btn-primary btn-rounded footer-btn' href="#">buy now</a>
-        </div>
+          <a class='hero-link btn btn-primary btn-rounded footer-btn' href="#">Submit</a>
+        </form>
       </article>
 
 
