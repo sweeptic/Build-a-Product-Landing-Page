@@ -141,8 +141,7 @@
     <div class="section-center product-one-center">
       <figure class="product-one-img">
 
-        <iframe id='video' width="560" height="315" src="https://www.youtube.com/embed/ebHqWaaLVdw"
-          title="YouTube video player" frameborder="0"
+        <iframe id='video' src="https://www.youtube.com/embed/ebHqWaaLVdw" title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
 
@@ -178,9 +177,11 @@
           ipsam voluptate itaque, ea recusandae temporibus harum architecto
           illo mollitia tenetur laudantium deleniti expedita quidem.
         </p>
-        <form class='product-footer-desc'>
-          <span class='hero-price product-footer-price'>$350</span>
-          <a class='hero-link btn btn-primary btn-rounded footer-btn' href="#">Submit</a>
+        <form class='product-footer-desc' id='form' method='post' action="https://www.freecodecamp.com/email-submit">
+          <!-- <span class='product-footer-email'>$350</span> -->
+          <input class='product-footer-email' type="email" name="email" id="email" placeholder="enter your email.">
+          <!-- <a id='submit' class='btn btn-primary btn-rounded footer-btn' href="#">Submit</a> -->
+          <input class='btn btn-primary btn-rounded footer-btn' id='submit' type="submit" value="Submit">
         </form>
       </article>
 
